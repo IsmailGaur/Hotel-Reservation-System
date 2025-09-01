@@ -10,8 +10,7 @@ This project demonstrates database connectivity using **JDBC**, object-oriented 
 - [Technologies Used](#technologies-used)  
 - [Database Setup](#database-setup)  
 - [Installation & Run](#installation--run)  
-- [Usage](#usage)  
-- [Screenshots](#screenshots)  
+- [Usage](#usage)   
 - [Notes](#notes)  
 - [Author](#author)  
 ---
@@ -78,12 +77,6 @@ Clone the repository:
 
 5.Interact with the console menu to manage hotel reservations.
 
-<img width="1919" height="1015" alt="Screenshot 2025-09-01 110230" src="https://github.com/user-attachments/assets/9b9e9a3e-d4b1-413e-a92f-08cec152e4fd" />
-Screenshots
-<img width="1915" height="1021" alt="Screenshot 2025-09-01 110243" src="https://github.com/user-attachments/assets/a16d1d0f-786f-49bd-89bb-ba23ba19e19b" />
-<img width="1868" height="514" alt="Screenshot 2025-09-01 110300" src="https://github.com/user-attachments/assets/dba3476f-9e56-4d7a-9fcb-5fc59fc14604" />
-<img width="1916" height="605" alt="Screenshot 2025-09-01 110343" src="https://github.com/user-attachments/assets/acc90600-e28a-413a-b15d-0ce4bbff40c2" />
-<img width="1417" height="450" alt="Screenshot 2025-09-01 110436" src="https://github.com/user-attachments/assets/b4cfaa27-45c7-4f0a-8128-d2a40f291f49" />
 
 Notes:
 
