@@ -1,8 +1,13 @@
-# Hotel Reservation System
+# 🏨 Hotel Reservation System
 
-A **Java-based Hotel Reservation System** that allows users to manage hotel reservations with full CRUD functionality.  
-This project demonstrates database connectivity using **JDBC**, object-oriented programming, and basic console-based interaction.
+[![Java](https://img.shields.io/badge/Java-17-orange?logo=java)](https://www.java.com/) 
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql)](https://www.mysql.com/) 
+[![JDBC](https://img.shields.io/badge/JDBC-Connector-blue)](https://docs.oracle.com/javase/tutorial/jdbc/)
 
+A **Java console-based Hotel Reservation System** to manage hotel reservations with full CRUD operations.  
+Connects to a **MySQL database** using JDBC for efficient data storage and retrieval.  
+
+---
 
 ## 📌 Table of Contents
 
@@ -13,39 +18,40 @@ This project demonstrates database connectivity using **JDBC**, object-oriented 
 - [Usage](#usage)   
 - [Notes](#notes)  
 - [Author](#author)  
+
 ---
 
 ## 🚀 Features
 
-- **Reserve a Room** – Add a new reservation with guest name, room number, and contact details.  
-- **View Reservations** – Display all current reservations with details.  
+- **Reserve a Room** – Add new reservations with guest name, room number, and contact number.  
+- **View Reservations** – Display all current reservations in a table format.  
 - **Get Room Number** – Retrieve room number using reservation ID and guest name.  
-- **Update Reservations** – Modify existing reservations.  
-- **Delete Reservations** – Remove a reservation from the system.  
-- **Exit System** – Gracefully exit the console application.
+- **Update Reservations** – Modify guest, room, or contact information.  
+- **Delete Reservations** – Remove reservations from the system.  
+- **Exit System** – Graceful application exit with countdown message.  
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **Java** – Core programming language.  
-- **JDBC** – For connecting to a MySQL database.  
-- **MySQL** – Relational database for storing reservations.  
-- **IntelliJ IDEA** – IDE used for development.  
+- **Java** – Core language for application logic.  
+- **JDBC** – Connects Java to MySQL database.  
+- **MySQL** – Stores reservation data.  
+- **IntelliJ IDEA** – IDE for development and testing.  
 
 ---
 
-## 📌 Database Setup
+## 🗄️ Database Setup
 
-1. Install **MySQL** if not already installed.  
-2. Create a database named `hotel_db`:
+1. **Install MySQL** and start the server.  
+2. Create the database:
 
 ```sql
 CREATE DATABASE hotel_db;
+Create the reservations table:
 
-
-Create a table reservation:
-
+sql
+Copy code
 CREATE TABLE reservation (
     reservation_id INT AUTO_INCREMENT PRIMARY KEY,
     guest_name VARCHAR(100) NOT NULL,
@@ -53,41 +59,60 @@ CREATE TABLE reservation (
     contact_number VARCHAR(15),
     reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+Update database credentials in Hotel_Reservation_System.java:
 
-
-Update database credentials in Hotel_Reservation_System.java if needed:
-
+java
+Copy code
 private static final String url = "jdbc:mysql://localhost:3306/hotel_db";
 private static final String username = "root";
 private static final String password = "Database@17";
 
 
-💻 How to Run
 
+## 💻** Installation & Run**
 Clone the repository:
 
-1. git clone https://github.com/IsmailGaur/Hotel-Reservation-System.git
+bash
+Copy code
+git clone https://github.com/IsmailGaur/Hotel-Reservation-System.git
+Open the project in IntelliJ IDEA.
+
+Make sure MySQL server is running and accessible.
+
+Add MySQL JDBC driver to project libraries if not already included.
+
+Run the main class:
+
+java
+Copy code
+Hotel_Reservation_System.java
+📝 Usage
+Follow the console menu to select options:
+
+Reserve a room
+
+View reservations
+
+Get room number
+
+Update reservations
+
+Delete reservations
+
+Exit
+
+Enter requested details like guest name, room number, and contact info.
 
 
-2. Open the project in IntelliJ IDEA.
 
-3. Make sure MySQL server is running.
+⚠️** Notes**
+Ensure correct input types when entering data.
 
-4. Run Hotel_Reservation_System.java.
+Minimal input validation is implemented for demonstration purposes.
 
-5.Interact with the console menu to manage hotel reservations.
+Console-based system; designed for learning and practice of Java, JDBC, and database handling.
 
-
-Notes:
-
-Make sure MySQL JDBC driver is added to your project libraries.
-
-Input validation is minimal; ensure correct data types when entering information.
-
-Designed as a console-based application for learning and demonstration purposes.
-
-👤 Author
-
-MO Ismail Azeem – Final Year B.Tech (CSE – AI)
+👤 **Author**
+Ismail Azeem – Final Year B.Tech (CSE – AI)
 
 GitHub: https://github.com/IsmailGaur
